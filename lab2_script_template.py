@@ -21,7 +21,8 @@ def main():
     new_movie =  {"title": "toy story", "genre": "adventure"}
     about_me["movies"].append(new_movie)
     print_student_name_and_id(about_me)
-    
+    add_pizza_toppings(about_me, ("MUSHROOMS", "SAUSAGE"))
+
 # TODO: Step 4 - Function that prints student name and ID	
 def print_student_name_and_id(about_me):
     full_name = about_me["full_name"]
@@ -32,6 +33,10 @@ def print_student_name_and_id(about_me):
 
 # TODO: Step 5 - Function that adds pizza toppings to data structure
 def add_pizza_toppings(about_me, toppings):
+    for new in toppings:
+        about_me["pizza_toppings"].append(toppings)
+        return new
+    
     return
 
 # TODO: Step 6 - Function that prints bullet list of pizza toppings
