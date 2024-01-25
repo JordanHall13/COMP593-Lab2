@@ -21,6 +21,7 @@ def main():
     new_movie =  {"title": "toy story", "genre": "adventure"}
     about_me["movies"].append(new_movie)
     print_student_name_and_id(about_me)
+    print_pizza_toppings(about_me)
     add_pizza_toppings(about_me, ("MUSHROOMS", "SAUSAGE"))
     print_pizza_toppings(about_me)
 # TODO: Step 4 - Function that prints student name and ID	
