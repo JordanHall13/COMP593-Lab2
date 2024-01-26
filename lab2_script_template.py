@@ -1,3 +1,6 @@
+"""
+The main purpose of this script is to print my name and split my first name from my last, print my student number, print my favourite pizza toppings, movies and what genre those movies are. The toppings must be printed in all caps first, and then print again with additional toppings added but in lower case. The toppings must be printed with bullet points. Then I must print out only the movie genres and have them seperated with commas, and do the same with the movie titles but they must all begin with capitals.
+"""
 def main():
 
     # TODO: Step 2 - Create a complex data structure
@@ -60,7 +63,7 @@ def print_movie_genres(about_me):
 def print_movie_titles(about_me):
     favourites = [mymovies["title"] for mymovies in about_me["movies"]]
     favs = ", ".join(favourites)
-    print(f"Some of my favourites are {favs.title()}")
+    print(f"Some of my favourite movies are {favs.title()}")
     return
     
 if __name__ == '__main__':
